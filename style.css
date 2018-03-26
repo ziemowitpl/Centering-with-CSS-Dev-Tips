@@ -1,0 +1,49 @@
+/* by DevTips in YouTube */
+
+.container {
+    width: 100%;
+    height: 210px;
+}
+.box {
+    background-image: url('homer-200x200.jpg');
+    width: 200px;
+    height: 200px;
+}
+/* text align with img image (html) */
+.text-algin-center-html-img .container {
+    text-align: center;
+}
+.text-algin-center-html-img .box {
+    display: block; /* One working */
+    display: inline-block;
+}
+/* text align with background image (css) */
+.text-algin-center .container {
+    text-align: center;
+}
+.text-algin-center .container .box {
+    display: inline-block;
+}
+/* margin auto positioning image (css) */
+.example-margin-auto .box {
+    margin: 0 auto;
+}
+/* absolute and margin positioning - margin-left: half width of image */
+.example-absolute-positioning .container {
+    position: relative;
+}
+.example-absolute-positioning .box {
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}
+
+/* absolute and translate positioning (css) */
+.example-translate .container {
+    position: relative;
+}
+.example-translate .box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
